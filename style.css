@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #222;
+}
+.card{
+    margin :100px auto 0;
+    padding:40px;
+    width: 90%;
+    max-width: 470px;
+    border-radius: 20px;
+    background:linear-gradient(135deg, #00feba,#5b548a);
+    color: #fff;
+    text-align: center;
+}
+.search{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search input{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    min-height: 60px;
+    border-radius: 30px;
+    padding: 10px 25px;
+    flex: 1;
+    margin-right: 16px;
+    font-size: 18px;
+}
+
+.search-icon img{
+    width: 16px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    background: #ebfffc;
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+.weather-icon{
+    width: 170px;
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+}
+.leftside,.rightside{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    justify-content: space-between;
+}
+.leftside img,.rightside img{
+    width: 40px;
+}
+.humidity{
+    font-size:28px;
+    margin-top: -6px;
+    /* margin-right: 50px; */
+}
+.wind{
+    font-size:28px;
+    margin-top: -6px;
+    /* margin-right: 50px; */
+
+}
+.weather{
+    opacity: 0;
+
+}
+.error{
+    text-align: left;
+    margin-left:10px ;
+    font-size: 14px;
+    opacity: 0;
+}
+@media(max-width:600px) {
+    .card {
+        width: 100%;
+        padding: 10px;
+    }
+    .details{
+        flex-direction: column;
+        align-items:center ;
+    }
+    .search-text input{
+        width: 70%;
+        font-size: 14px;
+    }
+    .search-icon button img {
+        width: 20px;
+        height: 20px;
+    }
+    .weather-icon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .temp {
+        font-size: 36px;
+    }
+
+    .city {
+        font-size: 20px;
+    }
+    .leftside, .rightside {
+        margin-bottom: 10px;
+    }
+
+    .humidity-icon img, .wind-icon img {
+        width: 25px;
+        height: 25px;
+    }
+}

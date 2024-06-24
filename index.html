@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="card">
+        <div class="search">
+            <div class="search-text">
+                <input type="text" placeholder="enter city name" id="city-input">
+            </div>
+            <div class="search-icon">
+                <button id="search-button"><img src="./images/search.png" alt="Search"></button>
+            </div>
+            <div class="error">
+                <p>Invalid City name</p>
+            </div>
+        </div>
+
+        <div class="weather">
+            
+            <img src="./images/rain.png" alt="rain" class="weather-icon">
+            <h1 class="temp">22 <sup>°C</sup></h1>
+            <h2 class="city">New York</h2>
+            <div class="details">
+                <div class="leftside">
+                    <div class="humidity-icon">
+                        <img src="./images/humidity.png" alt="humidity">
+                    </div>
+                    <div class="humidity">
+                        <p class="humidity-percent">50%  </p>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+                <div class="rightside">
+                    <div class="wind-icon">
+                        <img src="./images/wind.png" alt="wind">
+                    </div>
+                    <div class="wind">
+                        <p class="wind-speed">20km/hr</p>
+                        <p>wind</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="weather.js"></script>
+</html>
